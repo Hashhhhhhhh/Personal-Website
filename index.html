@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ethereal by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Hey there!<br />
+									<strong><span style="font-family:'Papyrus';">
+										This is Hashmitha</span></strong></h1>
+									<p> <span style="font-size: 20px;"><span style="font-family: 'Times new roman';">
+                                    I'm an aspiring physicist interested in the fields of Quantum Computing, Quantum machine learning, AI/ML, Robotics, Quantum Simulations and Quantum Sensing. Let's Connect!</span></span>
+					<br><br>
+									<a href="hash's resume.pdf" download><i><u>~ Resume</u></i>
+									
+									</a></p>
+		
+									<ul class="actions">
+										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="\images\makise kurisu.jpg" alt="" />
+								</div>
+							</section>
+							
+							
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+									<h2 class="major">N E W S </h2>
+									<p>26/07/2024: <br>
+										<blockquote>
+										Participated in the "Qiskit Global Summer School 2024: The Path to Utility" and completed all the four labs.
+										<a href="https://challenges.quantum.ibm.com/qgss-2024#lab-1">Read more </a> </blockquote></p>
+										<p> 19/07/2024: <br>
+										<blockquote>
+											Participated in the Online FDP on Quantum Computing: Algorithms and Applications hosted by NIT Warangal.
+											Got introduced to Quantum algorithms, Quantum machine learning, Quantum image processing, Post quantum cryptography etc.
+
+
+										</blockquote>
+										
+										</p>
+						
+
+
+									</p>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="\images\photo_2024-07-27_09-26-03.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+
+							<section class="panel color1">
+								<div class="intro joined">
+									<h2 class="major">R E S E A R C H </h2>
+									<p> To be updated : Researching on how to deploy an efficient quantum algorithm into a robot.
+										 </p>
+								</div>
+								
+								<div class="inner">
+									<!-- Styles -->
+<style>
+	#chartdiv {
+	  width: 100%;
+	  height: 1000px;
+	}
+	</style>
+	
+	<!-- Resources -->
+	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/wc.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+	
+	<!-- Chart code -->
+	<script>
+	am5.ready(function() {
+	
+	// Create root element
+	// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+	var root = am5.Root.new("chartdiv");
+	
+	
+	// Set themes
+	// https://www.amcharts.com/docs/v5/concepts/themes/
+	root.setThemes([
+	  am5themes_Animated.new(root)
+	]);
+	
+	
+	// Add series
+	// https://www.amcharts.com/docs/v5/charts/word-cloud/
+	var series = root.container.children.push(am5wc.WordCloud.new(root, {
+	  categoryField: "tag",
+	  valueField: "weight",
+	  maxFontSize: am5.percent(30)
+	}));
+	
+	// Configure labels
+	series.labels.template.setAll({
+	  fontFamily: "Comic Sans MS",
+	  fill: "#FFFFFF" // Set font color to white
+	});
+	
+	
+	setInterval(function() {  
+	  am5.array.each(series.dataItems, function(dataItem) {
+		var value = Math.random() * 65;
+		value = value - Math.random() * value;
+		dataItem.set("value", value);
+		dataItem.set("valueWorking", value);
+	  })
+	}, 5000)
+	
+	
+	// Data from:
+	// https://insights.stackoverflow.com/survey/2021#section-most-popular-technologies-programming-scripting-and-markup-languages
+	series.data.setAll([
+	  { tag: "Simulations", weight: 64.96 },
+	  { tag: "Quanatum Entanglement", weight: 56.07 },
+	  { tag: "Python", weight: 48.24 },
+	  { tag: "Pennylane", weight: 47.08 },
+	  { tag: "Qiskit", weight: 35.35 },
+	  { tag: "Machine learning", weight: 33.91 },
+	  { tag: "QML", weight: 30.19 },
+	  { tag: "QMod", weight: 27.13 },
+	  { tag: "Classiq", weight: 24.31 },
+	  { tag: "Superposition", weight: 30.98 },
+	  { tag: "Quantum teleportation", weight: 40.01 },
+	  { tag: "Superdense coding", weight: 29.75 },
+	  { tag: "spin", weight: 29.55 },
+	  { tag: "information theory", weight: 29.32 },
+	  { tag: "chaos", weight: 29.03 },
+	  { tag: "Algorithms", weight: 28.75 },
+	  { tag: "Black holes", weight: 27.02 },
+	 
+	  { tag: "Dirac", weight: 26.07 },
+	  { tag: "VQE", weight: 25.66 },
+	  { tag: "Matlab", weight: 24.66 },
+	  { tag: "Qubit", weight: 23.01 },
+	  { tag: "Complexity", weight: 27.8 },
+	  { tag: "Quantum annealing", weight: 28.6 },
+	  { tag: "D-wave", weight: 25.46 },
+	  { tag: "Artificial intelligence", weight: 24.12 },
+	  { tag: "QSVM", weight: 28.1 },
+	  { tag: "Grover's algorithm", weight: 24.88 },
+	  { tag: "optics", weight: 25.74 },
+	  { tag: "photonics", weight: 25.33 },
+	  { tag: "error-correction", weight: 24.29 },
+	  { tag: "quantum key distribution", weight: 25.97 },
+	  { tag: "Operators", weight: 50.79 },
+	  { tag: "Hamiltonian", weight: 40.65 },
+	  { tag: "Wave function", weight: 45.56 },
+	  
+	]);
+	
+	}); // end am5.ready()
+	</script>
+	
+	<!-- HTML -->
+	<div id="chartdiv"></div>
+									<ul class="grid-icons three connected">
+										
+									</ul>
+								</div>
+							</section>
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">P R O J E C T S </h2>
+									<p>
+										1. Created a fast-running AI model of the Earth’s climate that runs on a laptop or PC using historical climate data and public simulation outputs.
+			<br><br> 2. Built a personal website that showcases my skills and experiences using HTML templates and thereby deploying it to github pages.						
+									</p>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="\images\qc.jpg" alt="" />
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel">
+								<div class="intro color2">
+									<h2 class="major">MY<i> workshops </i> GALLERY</h2>
+									<p>"Photography is the physics of light captured on film or a sensor, freezing the dance of photons to reveal the unseen beauty of the universe."</p>
+								</div>
+								<div class="gallery">
+									<div class="group span-3">
+										<a href="\images\interferometer.jpg" class="image filtered span-3" data-position="bottom"><img src="\images\interferometer.jpg" alt="" /></a>
+										<a href="\images\interferometer.jpg" class="image filtered span-3-5" data-position="center"><img src="\images\interferometer.jpg" alt="" /></a>
+
+									</div>
+									<a href="\images\iisc.jpg" class="image filtered span-2-5" data-position="top"><img src="\images\iisc.jpg" alt="" /></a>
+									<div class="group span-4-5">
+										<a href="\images\instrument.jpg"  data-position="top"><img src="\images\instrument.jpg" alt="" /></a>
+
+										
+										
+									</div>
+									<a href="\images\csir.jpg" class="image filtered span-4" data-position="right"><img src="\images\csir.jpg" alt=""/></a>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">Contact</h2>
+									<p>"Want to reach out? Use the contact form to send me a message. Whether it's a question, feedback, or just to say hello, I’d love to hear from you and will respond as soon as possible!"</p>
+								</div>
+								<div class="inner columns divided">
+									<div class="span-3-25">
+										<form method="post" action="#">
+											<div class="fields">
+												<div class="field half">
+													<label for="name">Name</label>
+													<input type="text" name="name" id="name" />
+												</div>
+												<div class="field half">
+													<label for="email">Email</label>
+													<input type="email" name="email" id="email" />
+												</div>
+												<div class="field">
+													<label for="message">Message</label>
+													<textarea name="message" id="message" rows="4"></textarea>
+												</div>
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="button primary" /></li>
+											</ul>
+										</form>
+									</div>
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon brands fa-twitter"><a href="https://x.com/Physicla_"></a><strong>Twitter</strong></li>
+											<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/hashmitha14"><strong>LinkedIn</strong></a></li>
+											<li class="icon brands fa-github"><a href="https://github.com/Hashhhhhhhh"><strong>GitHub</strong></a></li>
+											<li class="icon fas fa-envelope"><a href="mailto:hashmitha14@gmail.com">E-Mail</a></li>   
+											
+										</ul>
+									</div>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color2-alt">
+								<div class="intro color2">
+									<h2 class="major">B L O G </h2>
+									<p>I write about topics related to quantum physics, quantum computing and everything in betweeen the land and the stars. Oh yeah! I write under the name Physiclá. </p>
+								</div>
+								<div class="inner columns aligned">
+									<div class="span-2-75">
+
+										<h3 class="major"></h3>
+										<p><span style="font-family: 'Garmond';"> 1. On quantum computers~ </span>
+									    <div class="Description"> <blockquote> Computers leverages the unique properties of quantum mechanics such as : superposition, and entanglement to perform computations.</blockquote></div>
+										<div class="read-more">
+											<a href="quantumcomputers.html">READ MORE</a>
+										</div></p>
+                                        <h3 class="minor"></h3>
+										<p><span style="font-family:'Garmond';">2. Intro to QML~</span>
+										<div class="'description"><blockquote>Machine Learning is a set of algorithms and statistical methods used to find patterns and make predictions from data.</blockquote></div>
+										<div class="read more">
+											<a href="intro to QML.html">READ MORE</a>
+
+
+										</div></p>
+
+
+
+										</p>
+
+
+
+
+									</div>
+									<div class="span-3">
+
+									<p> <span style="font-family: 'Garmond';">3.Shining stars~ </span></p>
+										<blockquote>to be updated </blockquote>
+
+									
+										
+
+									</div>
+									
+							</section>
+
+						<!-- Copyright -->
+							<div class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

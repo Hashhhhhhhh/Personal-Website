@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> QML </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .content {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #1a0dab;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 1px solid #1a0dab;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .back-link a:hover {
+            background-color: #1a0dab;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> <span style="font-family: 'Comic Sans MS';"> Intro to QML </span></h1>
+        </div>
+        <div class="content">
+            
+            <p>
+                <b><u>INTRODUCTION:</b></u><br><br>
+
+The quantity of data has been increasing as time passes and so is the need for quick access to data. This availability of large quantities of data (often referred to as "big data") provided the raw material needed for training more accurate and powerful machine learning models. Machine Learning is a set of algorithms and statistical methods used to find patterns and make predictions from data. Before diving deep into it, let's work on some of the basic definitions involved. The terms "machine learning models" and "machine learning algorithms" are often used interchangeably, but they refer to different concepts in the context of machine learning. An algorithm in machine learning refers to a specific procedure, often a set of rules required to solve a problem or perform a computation. On context with ML it refers to the method used to train a model from data. Whereas a model is the result of applying a machine learning algorithm to a set of data. It represents the learned parameters, patterns, or structures that allow the model to make predictions or classifications based on new and unseen data.
+            
+            <p>
+                Some of the types of quantum computers include - Trapped Ion Quantum Computers, Quantum annealers , Neutral atom quantum computers, topological quantum computers etc. 
+            </p>
+            <p><u>Example:</u><br>  
+
+                1. <b>Algorithm- Linear Regression :</b> Linear regression is an algorithm used to model the relationship between a dependent variable and one or more independent variables. The algorithm aims to find the best-fit line (or hyperplane in higher dimensions) that minimizes the difference between the predicted values and the actual values. 
+                <br>2.<b>Model - Linear regression model:</b> After applying the linear regression algorithm to a specific dataset, you get a linear regression model. This model contains the learned parameters which define the best-fit line.</p>
+            <p>
+               <i> Feature space </i> is the central concept of machine learning as it defines how data is represented, how algorithms measure similarities and differences, and how models learn patterns and make predictions. The feature space refers to the n-dimensional space where each dimension corresponds to one of the features (variables) used to describe the data. For example, if you have a dataset with two features (e.g., marks scores in physics and maths), the feature space is two-dimensional. Each data point is represented as a vector in this space. For example, a data point with features (Physics marks=99, maths marks = 89) can be represented as a point in the 2D feature space. The process of selecting, transforming, and creating features to improve the model's performance is known as feature engineering. 
+            </p>
+            We can create our own machine learning model with the help of the following ways:<br>
+            1. Defining the problem <br>
+            2. Collecting and pre-processing data<br>
+            3. Feature engineering <br>
+            4. Choosing a model (ex: linear regression, SVMs, decision tree) and training them<br>
+            5. Evaluating the model and hyper-tuning parameters <br>
+            6. Testing and deploying the model<br>
+            7. Monitoring and updating the model if necessary<br>
+            8. Maintaining the model<br>
+
+            </p><p><b><u>TYPES OF MACHINE LEARNING MODELS: 
+            </u></b><br><br>
+            On a broader sense the machine learning models are divided into two : Supervised and Unsupervised. <br>
+
+ 1. <i>Supervised </i>:  involves training models on labelled data, where each training example includes input features and a corresponding output label. The goal is for the model to learn a mapping from inputs to outputs based on the provided examples. 
+<br>2. <i>Unsupervised </i>:  involves training models on unlabelled data, focusing on finding hidden patterns or structures within the data. The model learns relationships and structures without explicit guidance on what the output should be. The goal discover intrinsic patterns, groupings, or representations in the data without predefined categories.
+  
+                <p><u>TYPES OF SUPERVISED MACHINE LEARNING MODELS :</u><br><br>
+
+                1. REGRESSION MODELS: finds a target value based on independent predictors.<br>
+                <blockquote>(a) Linear regression : fits a line to the data. (for linear relationships)<br>
+                    (b) Polynomial regression : finds a curve that best fits the data. (for non- linear relationships)<br>
+                    (c) Multiple Linear regression: finds a plane to best fit the data. <br>
+                    </blockquote>
+                2. CLASSIFICATION MODELS: In this the output is discrete. <br>
+                <blockquote>
+                    (a) Logistic regression: works by fitting a logistic function to the data, which maps input values to a probability between 0 and 1. Ex: an e-mail is spam or not. 
+<br>(b) Decision Trees and Random Forests:  Decision trees is a non-linear model that splits the data into subsets based on the features. Each node represents a feature and each branch represents a decision rule. Random forest is an ensemble model consisting of multiple decision trees. Combines predictions from multiple decision trees to improve accuracy and reduce overfitting.
+<br>(c) Support Vector Machines (SVM): Finds the optimal hyperplane that separates data points of different classes with the maximum margin. Ex: classifying handwritten digits in image processing tasks. 
+<br>(d) K-Nearest Neighbours (KNN): classifies new data points based on the majority class of their k-nearest neighbours in feature space. Effective for non-linear classification tasks. Ex: Recommending movies based on the preferences of users with similar taste.
+<br>(e) Naive Bayes: is a probabilistic model based on Baye's theorem. Assumes independence between features and calculates the probability of each class given the input data. Often used for text classification and spam filtering. Ex: Categorizing news articles into topics like sports, politics, and entertainment.
+<br> (f) Neural networks: is a model with multiple layers (input layer, output layer, hidden layers) of interconnected neurons.
+                </blockquote></p>
+                <p><u>TYPES OF UNSUPERVISED LEARNING MODELS:</u><br><br>
+
+                    1. CLUSTERING MODELS : <br>
+                   <blockquote>(a) K-Means: Divides data points into k clusters based on similarities in feature space.<br>
+(b) Hierarchical Clustering: Builds a tree-like hierarchy of clusters by merging or splitting them based on proximity.<br>
+(c) DBSCAN (Density-Based Spatial Clustering of Applications with Noise): Clusters data points based on density, identifying outliers as noise.<br>
+(d) Mean shifting : aims to discover clusters by iteratively shifting data points towards the mode or center of the data's distribution.<br>
+                   </blockquote><br>
+                   2. DIMENSIONALITY REDUCTION: reduces the number of dimensions of your feature space.<br>
+                   <blockquote>(a) Principal component Analysis (PCA): Reduces the dimensionality of the data while preserving as much variance as possible.            </blockquote>
+                </p></blockquote>
+                
+                
+
+                   <b><u> PROBLEM WITH LINEAR CLASSIFICATION IN CLASSICAL MACHINE LEARNING: </u></b>
+                   <p> 
+                    Let's imagine we have two sets of data points each belonging to distinct categories arranged in a sorted manner- one set of data points on the left and the other set of data points on the right (yeah! arranged in a simple linear plane). In this case, we draw a simple line to separate them. But complex data distributions may not yield to a single line's simple classification. To classify such data we map the data using kernel functions into a higher dimensional space called the feature space. Kernel functions facilitate the transformation of data into higher - dimensional spaces, making it easy to classify complex datasets. However as the complexity of the data sets increases, the compute runtime can explode.       </p>
+</p>
+
+
+
+
+
+
+                   <b><u> THE NEED FOR QML: </u></b>
+<p>Information processing with quantum computers relies on substantially different laws of physics known as quantum theory. Quantum computers can access more complex and complicated higher dimensional feature spaces. They do this as we encode our data in quantum circuits and the resulting kernel functions could even impossible to even replicate on a classical machine. Those kinds of functions can hence perform better. In 2021 IBM researchers proved that quantum kernels can provide an exponential speedup over certain class of classification problems. Thus, Quantum Machine Learning (QML) emerges at the intersection of quantum computing and machine learning, leveraging the unique principles of quantum mechanics to potentially enhance computational capabilities for certain types of problems that the classical computers struggle to handle efficiently. </p>
+
+                   <b><u> LEVERAGING QISKIT RUNTIME: </u></b><p>Leveraging tools like Qiskit Runtime provides a profound environment for building quantum machine learning algorithms. Qiskit Runtime includes specialized quantum operations and algorithms that are optimized for specific tasks. These primitives are designed to leverage quantum computing advantages such as superposition, entanglement, and interference to perform computations more efficiently than classical counterparts.</p>
+
+
+
+                   <b><u> PRACTICAL APPLICATIONS OF QUANTUM KERNELS:          </u></b><p>
+                    Quantum kernels can be applied to solve the real world classification problems. Quantum kernel measures the similarity or distance between data points in a quantum state space, potentially leveraging quantum computational advantages. Suppose we have a linear classification problem where we aim to predict whether a customer will purchase a product based on two features: age and income. The quantum kernels can enhance this classification task in the following way:
+
+                   </p><blockquote>
+                    (a) Encoding each data point (customer's age and income) into a quantum state using quantum gates. Each quantum state may represent a feature.
+<br>(b) Constructing a quantum circuit that computes the quantum kernel between pairs of encoded data points.<br>
+(c) Using quantum sampling techniques (e.g., using Qiskit's sampler primitive) to obtain quasi-probabilities that reflect relationships between pairs of quantum states where these quasi-probabilities form the kernel matrix, and each entry represents a measure of similarity between two data points.
+<br> (d) Using the kernel matrix obtained from the quantum circuit as input to a classical SVM algorithm. SVM utilizes the kernel matrix to define decision boundaries and predict the classification labels like whether the customer will purchase the product or not.
+                   </blockquote>
+
+
+<p> Perhaps, machine learning forms the basis in harnessing and manipulating the scope of data. 
+<br><br>
+    EXPLORE!!!!</p>
+
+           
+        </div>
+        <div class="back-link">
+            <a href="file:///C:/Users/hashmitha/Downloads/html5up-ethereal/index.html">BACK TO NEWS</a>
+        </div>
+    </div>
+</body>
+</html>

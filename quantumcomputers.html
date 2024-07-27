@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> O n   Q u a n t u m   C o m p u t e r s </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .content {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-link a {
+            color: #1a0dab;
+            text-decoration: none;
+            font-size: 1rem;
+            border: 1px solid #1a0dab;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .back-link a:hover {
+            background-color: #1a0dab;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1> <span style="font-family: 'Comic Sans MS';">  On Quantum Computers </span></h1>
+        </div>
+        <div class="content">
+            
+            <p>
+                Quantum computers leverages the unique properties of quantum mechanics such as : superposition, and entanglement to perform computations. The requirements for implementation of quantum computing i.e., the Divincenzo criteria for evaluating a quantum computer's physical implementation:
+               
+               </p>
+               1. A scalable physical system with well characterized qubits i.e., its physical parameters should be known accurately which even includes the Hamiltonian of the qubit. 
+              <br>
+               2. The ability to initialize the state of the qubits to a simple fiducial state. The reason being: quantum error correction requires a continuous, fresh supply of qubits in a low-entropy state.
+               <br>
+               3. Long relevant decoherence times, much longer than the gate operation time. The decoherence time must be long enough that the uniquely quantum features of computation of this type would get a chance to come out.
+               <br>
+               
+               4. A universal set of quantum gates.
+               <br>
+               5. A qubit specific measurement capability.
+            
+            
+            <p>
+                Some of the types of quantum computers include - Trapped Ion Quantum Computers, Quantum annealers , Neutral atom quantum computers, topological quantum computers etc. 
+            </p>
+            <p>
+                <b> <u>
+                UNIVERSAL GATE- BASED QUANTUM COMPUTERS: </b></u>
+            <br>
+            <br>
+            They operate using quantum gates to perform computation. They apply these gates to qubits to build in increasingly complex algorithms. For example: Hadamard gate puts the qubit in equal superposition while CNOT gate enables entanglement. The gates used in classical computing are irreversible. For instance consider a 2-input AND gate whose input terminals are marked as A and B. Lets assume that we got the final result as 0. The problem here is that we don't really know if it is A which is 1 or B ! Hence the information is lost, but here in the quantum regime we have got the ' no cloning-theorem '. It states that we cannot copy the quantum states exactly. However we can simulate a quantum computer on a classical machine. However these universal gate-based quantum computers are less efficient in solving optimization problems. So did the need for quantum annealers emerge. But wait! Shor's algorithm is more efficiently implemented on a gate-based quantum computer. 
+
+
+            </p><p><b><u>QUANTUM ANNEALERS - THE UNSUNG HEROES:</u></b><br><br>
+                Quantum annealers are actually quantum computers that uses the same principles of quantum mechanics - superposition and entanglement and they're so good when it comes to solving optimization problems where we can just search over a place find an optimal solution. They're built for translating quantum unconstrained binary optimization models and Ising models. D- Wave machines are examples of quantum annealers. They are built using superconducting qubits which is a design based on having a cooper pair ( are pairs of electrons or other fermions that move together through a superconductor without resistance) with a Josephson junction. It allows for the tunneling of Cooper pairs between the superconductors, creating a supercurrent that can flow without any applied voltage. The entire quantum annealer operates at cryogenic temperatures (close to absolute zero) to maintain superconductivity and minimize thermal noise. Hence dilution refrigerators are used (You're right! Those golden stuff! But why gold? To enhance conductivity) . Also, external magnetic fields and microwave pulses are used to control and read out the states of the qubits.
+
+            </p>
+            <p><b><u>D-WAVE'S QUANTUM ANNEALERS: </u></b><br><br>
+            Quantum annealing is a method used to find the global minimum of a function, which is often represented as the ground state of a physical system. This technique is particularly well-suited for solving combinatorial optimization problems. Unlike thermal annealing, quantum annealing uses quantum fluctuations as we set up a quantum problem in a hamiltonian and it evolves adiabatically from the initial Hamiltonian to the final Hamiltonian, which encodes the optimization problem to be solved. Ideally, the system remains in its ground state during this evolution, eventually reaching the ground state of the final Hamiltonian, which corresponds to the optimal solution of the problem.
+D-wave has developed two chip designs - Chimera and Pegasus. These structures are optimized to take the graph problem and translate it onto the quantum chip ( mapping graphs into the structure of the chip). So the nodes of the graph are mapped to the qubits and edges are mapped to couplers. The Pegasus layout involves a more complex, higher-dimensional connectivity scheme. This allows for better embedding of larger and more complex problems into the hardware. The Chimera architecture laid the foundation with its limited but practical connectivity, while the Pegasus architecture expands on this with higher connectivity and scalability, enabling more complex and larger-scale optimization problems to be efficiently solved.
+        </p><p>To conclude, Gate-based systems require more complex architectures and error correction methods, making them more challenging to scale up compared to quantum annealers. Quantum annealers are designed for practical, near-term applications in optimization, whereas gate-based quantum computers aim for broader applications, including those that are theoretically intractable for classical computers.</p>
+
+
+        </div>
+        <div class="back-link">
+            <a href="file:///C:/Users/hashmitha/Downloads/html5up-ethereal/index.html">BACK TO NEWS</a>
+        </div>
+    </div>
+</body>
+</html>
